@@ -15,7 +15,7 @@ public class Part1
       
       while(stopIndex != -1){
            if((stopIndex - startIndex)%3  == 0){
-               return dna.subString(startIndex , stopIndex +3);
+               return dna.substring(startIndex , stopIndex +3);
             
             }
         else{
@@ -24,8 +24,37 @@ public class Part1
         
         
         }
-        return "";
+        return " ";
     }
 
+ 
+    void testSimpleGene(){
+  
+        String dna = "ATAGTATCAACCTAAGCT";
+        String gene = findSimpleGene(dna);
+        System.out.println("DNA :" +dna+"\n" + "Gene :" +gene);
+   
+   
+        dna = "AGTAGCCTATGAACTAC";
+        gene = findSimpleGene(dna);
+        System.out.println("DNA :" +dna+"\n" + "Gene :" +gene);
+   
+   
+        dna = "ATGCATTACTGCCAATACGA";
+        gene = findSimpleGene(dna);
+        System.out.println("DNA :" +dna+"\n" + "Gene :" +gene);
+   
+   
+        dna = "ATGTTACGATAA";
+        gene = findSimpleGene(dna);
+        System.out.println("DNA :" +dna+"\n" + "Gene :" +gene);
     
+        dna = "ATGTTACGTAA";
+        gene = findSimpleGene(dna);
+        System.out.println("DNA :" +dna+"\n" + "Gene :" +gene);
+        
+        
+ 
+   }
+   
 }
