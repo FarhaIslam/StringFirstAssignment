@@ -1,7 +1,7 @@
 
 public class Part21
 {
-    public String findSimpleGene(String dna)
+    public String findSimpleGene(String dna , String startCoden , String stopCoden)
     {
        int startIndex = dna.indexOf("ATG");
        if(startIndex == -1)
